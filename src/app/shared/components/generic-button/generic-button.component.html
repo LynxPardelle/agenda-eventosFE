@@ -1,0 +1,160 @@
+<ng-container [ngSwitch]="matButtonType">
+  <button
+    *ngSwitchCase="'basic'"
+    mat-button
+    class="bef"
+    [ngClass]="
+      !!disabled && !!disabledClassButton && disabledClassButton !== ''
+        ? disabledClassButton
+        : classButton
+    "
+    (click)="clicked.emit(type)"
+    [disabled]="disabled"
+    id="{{ randomId }}"
+    matTooltip="{{ tooltip }}"
+    [matTooltipPosition]="tooltipPosition"
+    matTooltipClass="{{ tooltipClass }}"
+    containerClass="tooltipClass"
+    [matTooltipDisabled]="!showTooltip"
+  >
+    <span class="bef bef-cursor-pointer" [innerHTML]="customHtml | safeHtml">
+    </span>
+  </button>
+  <button
+    *ngSwitchCase="'raised'"
+    mat-raised-button
+    class="bef"
+    [ngClass]="
+      !!disabled && !!disabledClassButton && disabledClassButton !== ''
+        ? disabledClassButton
+        : classButton
+    "
+    (click)="clicked.emit(type)"
+    [disabled]="disabled"
+    id="{{ randomId }}"
+    matTooltip="{{ tooltip }}"
+    [matTooltipPosition]="tooltipPosition"
+    matTooltipClass="{{ tooltipClass }}"
+    [matTooltipDisabled]="!showTooltip"
+  >
+    <span class="bef bef-cursor-pointer" [innerHTML]="customHtml | safeHtml">
+    </span>
+  </button>
+  <button
+    *ngSwitchCase="'stroked'"
+    mat-stroked-button
+    class="bef"
+    [ngClass]="
+      !!disabled && !!disabledClassButton && disabledClassButton !== ''
+        ? disabledClassButton
+        : classButton
+    "
+    (click)="clicked.emit(type)"
+    [disabled]="disabled"
+    id="{{ randomId }}"
+    matTooltip="{{ tooltip }}"
+    [matTooltipPosition]="tooltipPosition"
+    matTooltipClass="{{ tooltipClass }}"
+    [matTooltipDisabled]="!showTooltip"
+  >
+    <span class="bef bef-cursor-pointer" [innerHTML]="customHtml | safeHtml">
+    </span>
+  </button>
+  <button
+    *ngSwitchCase="'flat'"
+    mat-flat-button
+    class="bef"
+    [ngClass]="
+      !!disabled && !!disabledClassButton && disabledClassButton !== ''
+        ? disabledClassButton
+        : classButton
+    "
+    (click)="clicked.emit(type)"
+    [disabled]="disabled"
+    id="{{ randomId }}"
+    matTooltip="{{ tooltip }}"
+    [matTooltipPosition]="tooltipPosition"
+    matTooltipClass="{{ tooltipClass }}"
+    [matTooltipDisabled]="!showTooltip"
+  >
+    <span class="bef bef-cursor-pointer" [innerHTML]="customHtml | safeHtml">
+    </span>
+  </button>
+  <button
+    *ngSwitchCase="'icon'"
+    class="bef bef-cursor-pointer"
+    [ngClass]="
+      !!disabled && !!disabledClassButton && disabledClassButton !== ''
+        ? disabledClassButton
+        : classButton
+    "
+    (click)="clicked.emit(type)"
+    [disabled]="disabled"
+    id="{{ randomId }}"
+    matTooltip="{{ tooltip }}"
+    [matTooltipPosition]="tooltipPosition"
+    matTooltipClass="{{ tooltipClass }}"
+    [matTooltipDisabled]="!showTooltip"
+    [innerHTML]="customHtml | safeHtml"
+  >
+  </button>
+  <button
+    *ngSwitchCase="'fab'"
+    mat-fab
+    class="bef"
+    [ngClass]="
+      !!disabled && !!disabledClassButton && disabledClassButton !== ''
+        ? disabledClassButton
+        : classButton
+    "
+    (click)="clicked.emit(type)"
+    [disabled]="disabled"
+    id="{{ randomId }}"
+    matTooltip="{{ tooltip }}"
+    [matTooltipPosition]="tooltipPosition"
+    matTooltipClass="{{ tooltipClass }}"
+    [matTooltipDisabled]="!showTooltip"
+  >
+    <span class="bef bef-cursor-pointer" [innerHTML]="customHtml | safeHtml">
+    </span>
+  </button>
+  <button
+    *ngSwitchCase="'mini-fab'"
+    mat-mini-fab
+    class="bef"
+    [ngClass]="
+      !!disabled && !!disabledClassButton && disabledClassButton !== ''
+        ? disabledClassButton
+        : classButton
+    "
+    (click)="clicked.emit(type)"
+    [disabled]="disabled"
+    id="{{ randomId }}"
+    matTooltip="{{ tooltip }}"
+    [matTooltipPosition]="tooltipPosition"
+    matTooltipClass="{{ tooltipClass }}"
+    [matTooltipDisabled]="!showTooltip"
+  >
+    <span class="bef bef-cursor-pointer" [innerHTML]="customHtml | safeHtml">
+    </span>
+  </button>
+  <button
+    *ngSwitchDefault
+    class="bef"
+    [ngClass]="
+      !!disabled && !!disabledClassButton && disabledClassButton !== ''
+        ? disabledClassButton
+        : classButton
+    "
+    (click)="clicked.emit(type)"
+    [disabled]="disabled"
+    id="{{ randomId }}"
+    matTooltip="{{ tooltip }}"
+    [matTooltipPosition]="tooltipPosition"
+    matTooltipClass="{{ tooltipClass }}"
+    [matTooltipDisabled]="!showTooltip"
+  >
+    <span class="bef bef-cursor-pointer" [innerHTML]="customHtml | safeHtml">
+    </span>
+  </button>
+</ng-container>
